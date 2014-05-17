@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function decorador(nombre, genero) {
+                if (genero == 'M') {
+                    return 'Sr ' + nombre;
+                }
+                else if (genero == 'F') {
+                    return 'Sra ' + nombre;
+                }
+                else {
+                    return 'ingresar M o F';
+                }
+            }
+
+            console.log(decorador('Alex', 'M'));
+            function elegir(raza, texto){
+                if (raza == 'chihuahua'){
+                    return 'Maldito perro enano: ' + texto;
+                }
+                else if (raza == 'pastor catalan'){
+                    return 'Super perro bueno e inteligente' + texto;
+                }
+                else if (raza == 'american standford'){
+                    return 'Es un perrazo americano' + texto;
+                }
+                else if (raza == 'bulldog'){
+                    return 'Que cacho perro gordo que me encanta' + texto;
+                }
+                  else if (raza == 'york shire'){
+                    return 'maldita rata muerdecalcetines y cagona meona que hace pizquitos!!!!' + texto;
+                }
+                else {
+                    return 'Pero si no tenemos ese perro';
+                }
+            }
+            console.log(elegir('york shire',' ojos verdes camuflado con azul y fluorescente!!!'));
+
+            function mensaje(nenecole){
+                switch (nenecole){
+                    case 'Alex':
+                        return 'Es el nene mas guapo y mas listo del colegio';
+                        break;
+
+                    case 'Sem':
+                        return 'Es mi mejor amigo';
+                        break;
+
+                    case 'Eli':
+                        return 'Es muy mala me quita los lapices';
+                        break;
+
+                    case 'Izan':
+                        return 'Es muy majo me gusta mucho que juegue conmigo';
+                        break;
+
+                    case 'Amigo 4º':
+                        return 'Me gusta jugar con el';
+                        break;
+
+                    case 'Nicole':
+                        return 'Es un poco mandona como eli';
+                        break;
+                                 }
+            }
+                 var resultado = mensaje('Amigo 4º');
+
+            console.log(resultado);
+
+
+        </script>
+    </body>
+</html>
